@@ -548,7 +548,7 @@ function App() {
           <div className="row gy-4">
             <div className="col-lg-5 col-md-12 footer-info">
               <a href="index.html" className="logo d-flex align-items-center">
-                <span>Impact</span>
+                <span>Revolve</span>
               </a>
               <p>
                 Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
