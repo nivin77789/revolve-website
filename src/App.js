@@ -1,4 +1,5 @@
 import "./App.css";
+import React from "react";
 
 function App() {
   return (
@@ -71,7 +72,9 @@ function App() {
       </header>
       <section id="hero" className="hero">
         <div className="container position-relative">
-          <div className="row gy-5" data-aos="fade-in">
+          {/* 
+        <div className="row gy-5" data-aos="fade-in"> */}
+          <div className="row gy-5">
             <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
               <h2>
                 Welcome to <span>Impact</span>
@@ -94,23 +97,17 @@ function App() {
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2">
-              <img
-                src="assets/img/hero-img.svg"
-                className="img-fluid"
-                alt=""
-                data-aos="zoom-out"
-                data-aos-delay="100"
-              />
+              <img src="assets/img/hero-img.svg" className="img-fluid" alt="" />
+              {/* data-aos="zoom-out"
+                data-aos-delay="100" */}
             </div>
           </div>
           <div className="icon-boxes position-relative">
             <div className="container position-relative">
               <div className="row gy-4 mt-5">
-                <div
-                  className="col-xl-3 col-md-6"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
+                <div className="col-xl-3 col-md-6">
+                  {/* data-aos="fade-up"
+                  data-aos-delay="100" */}
                   <div className="icon-box">
                     <div className="icon">
                       <i className="bi bi-easel"></i>
@@ -123,11 +120,9 @@ function App() {
                   </div>
                 </div>
 
-                <div
-                  className="col-xl-3 col-md-6"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
+                <div className="col-xl-3 col-md-6">
+                  {/* data-aos="fade-up"
+                  data-aos-delay="200" */}
                   <div className="icon-box">
                     <div className="icon">
                       <i className="bi bi-gem"></i>
@@ -140,11 +135,9 @@ function App() {
                   </div>
                 </div>
 
-                <div
-                  className="col-xl-3 col-md-6"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                >
+                <div className="col-xl-3 col-md-6">
+                  {/* data-aos="fade-up"
+                  data-aos-delay="300" */}
                   <div className="icon-box">
                     <div className="icon">
                       <i className="bi bi-geo-alt"></i>
@@ -157,11 +150,9 @@ function App() {
                   </div>
                 </div>
 
-                <div
-                  className="col-xl-3 col-md-6"
-                  data-aos="fade-up"
-                  data-aos-delay="500"
-                >
+                <div className="col-xl-3 col-md-6">
+                  {/* data-aos="fade-up"
+                  data-aos-delay="500" */}
                   <div className="icon-box">
                     <div className="icon">
                       <i className="bi bi-command"></i>
@@ -180,7 +171,8 @@ function App() {
       </section>
       <main id="main">
         <section id="about" className="about">
-          <div className="container" data-aos="fade-up">
+          <div className="container">
+            {/* data-aos="fade-up" */}
             <div className="section-header">
               <h2>About Us</h2>
               <p>
