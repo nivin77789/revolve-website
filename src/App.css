@@ -25,7 +25,9 @@
   --color-primary: #0b133e;
   --color-secondary: #fff;
 }
-
+.hero-img {
+  width: 500px;
+}
 /* Smooth scroll behavior */
 :root {
   scroll-behavior: smooth;
@@ -821,8 +823,8 @@ section {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action .container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-
+  background: #0f1748;
+  box-shadow: 5px 5px 5px 10px rgba(1, 1, 23, 0.145);
   background-size: cover;
   padding: 100px 60px;
   border-radius: 15px;
@@ -1965,12 +1967,13 @@ section {
 }
 
 @media (min-width: 1200px) {
-  .hero .icon-boxes:before {
+  .hero .icon-boxes::before {
+    width: 1800px;
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: 0px;
+    right: 0px;
     height: calc(50% + 20px);
     background-color: #080e34;
   }

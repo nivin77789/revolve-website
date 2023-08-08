@@ -94,7 +94,11 @@ function App() {
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2">
-              <img src="assets/img/hero-img.svg" className="img-fluid" alt="" />
+              <img
+                src="assets/img/hero.png"
+                className="img-fluid hero-img"
+                alt=""
+              />
               {/* data-aos="zoom-out"
                 data-aos-delay="100" */}
             </div>
@@ -628,12 +632,9 @@ function App() {
           <div className="copyright">
             &copy; Copyright{" "}
             <strong>
-              <span>Impact</span>
+              <span>Revolve</span>
             </strong>
             . All Rights Reserved
-          </div>
-          <div className="credits">
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
           </div>
         </div>
       </footer>
