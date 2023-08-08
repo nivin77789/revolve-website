@@ -77,12 +77,9 @@ function App() {
           <div className="row gy-5">
             <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
               <h2>
-                Welcome to <span>Impact</span>
+                Welcome to <span>Revolve</span>
               </h2>
-              <p>
-                Sed autem laudantium dolores. Voluptatem itaque ea consequatur
-                eveniet. Eum quas beatae cumque eum quaerat.
-              </p>
+              <p> Enhancing Business Decision-Making with AI/ML Solutions</p>
               <div className="d-flex justify-content-center justify-content-lg-start">
                 <a href="#about" className="btn-get-started">
                   Get Started
@@ -184,58 +181,28 @@ function App() {
 
             <div className="row gy-4">
               <div className="col-lg-6">
-                <h3>Voluptatem dignissimos provident quasi corporis</h3>
                 <img
-                  src="assets/img/about.jpg"
+                  src="assets/img/about.png"
                   className="img-fluid rounded-4 mb-4"
                   alt=""
                 />
-                <p>
-                  Ut fugiat ut sunt quia veniam. Voluptate perferendis
-                  perspiciatis quod nisi et. Placeat debitis quia recusandae
-                  odit et consequatur voluptatem. Dignissimos pariatur
-                  consectetur fugiat voluptas ea.
-                </p>
-                <p>
-                  Temporibus nihil enim deserunt sed ea. Provident sit expedita
-                  aut cupiditate nihil vitae quo officia vel. Blanditiis
-                  eligendi possimus et in cum. Quidem eos ut sint rem veniam
-                  qui. Ut ut repellendus nobis tempore doloribus debitis
-                  explicabo similique sit. Accusantium sed ut omnis beatae neque
-                  deleniti repellendus.
-                </p>
               </div>
               <div className="col-lg-6">
                 <div className="content ps-0 ps-lg-5">
-                  <p className="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                  <ul>
-                    <li>
-                      <i className="bi bi-check-circle-fill"></i> Ullamco
-                      laboris nisi ut aliquip ex ea commodo consequat.
-                    </li>
-                    <li>
-                      <i className="bi bi-check-circle-fill"></i> Duis aute
-                      irure dolor in reprehenderit in voluptate velit.
-                    </li>
-                    <li>
-                      <i className="bi bi-check-circle-fill"></i> Ullamco
-                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                      irure dolor in reprehenderit in voluptate trideta
-                      storacalaperda mastiro dolore eu fugiat nulla pariatur.
-                    </li>
-                  </ul>
+                  <h3 className="fst-italic">
+                    How AI/ML Revolutionises Decision-Making:
+                  </h3>
+
                   <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident
+                    Our cutting-edge AI/ML solutions offer businesses a
+                    competitive edge by transforming raw data into actionable
+                    insights. Through advanced algorithms and predictive
+                    modelling, we enable companies to anticipate market trends,
+                    identify opportunities, and mitigate risks with
+                    unprecedented accuracy.
                   </p>
 
-                  <div className="position-relative mt-4">
+                  {/* <div className="position-relative mt-4">
                     <img
                       src="assets/img/about-2.jpg"
                       className="img-fluid rounded-4"
@@ -247,7 +214,7 @@ function App() {
                     >
                       1
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
