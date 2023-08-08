@@ -21,7 +21,7 @@
 
 /* Colors */
 :root {
-  --color-default: #222222;
+  --color-default: #8c8e94;
   --color-primary: #0b133e;
   --color-secondary: #fff;
 }
@@ -950,7 +950,7 @@ section {
 
 .services .service-item {
   padding: 40px;
-  background: #fff;
+  background: #050b2d;
   height: 100%;
   border-radius: 10px;
 }
@@ -975,7 +975,7 @@ section {
   content: "";
   height: 100%;
   width: 100%;
-  background: #eeeeee;
+  background: #182d83;
   border-radius: 50px;
   z-index: 1;
   top: 10px;
@@ -1008,7 +1008,7 @@ section {
 }
 
 .services .service-item:hover .icon:before {
-  background: #00b6a1;
+  background: #4a6cf7;
 }
 
 .services .service-item:hover h3 {

@@ -4,7 +4,7 @@ import React from "react";
 function App() {
   return (
     <div classNameName="App">
-      <section id="topbar" className="topbar d-flex align-items-center">
+      {/* <section id="topbar" className="topbar d-flex align-items-center">
         <div className="container d-flex justify-content-center justify-content-md-between">
           <div className="contact-info d-flex align-items-center">
             <i className="bi bi-envelope d-flex align-items-center">
@@ -29,7 +29,7 @@ function App() {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <header id="header" className="header d-flex align-items-center">
         <div className="container-fluid container-xl d-flex align-items-center justify-content-between">

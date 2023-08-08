@@ -1972,6 +1972,8 @@ section {
 
 .hero .icon-box {
   padding: 60px 30px;
+  height: 100%;
+  width: 100%;
   position: relative;
   overflow: hidden;
   background: #0f1748;
@@ -1979,8 +1981,7 @@ section {
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
-  height: 100%;
-  width: 100%;
+
   text-align: center;
 }
 
