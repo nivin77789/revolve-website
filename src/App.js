@@ -115,7 +115,7 @@ function App() {
                     </div>
                     <h4 className="title">
                       <a href="./" className="stretched-link">
-                        Lorem Ipsum
+                        Expertise
                       </a>
                     </h4>
                   </div>
@@ -126,11 +126,11 @@ function App() {
                   data-aos-delay="200" */}
                   <div className="icon-box">
                     <div className="icon">
-                      <i className="bi bi-gem"></i>
+                      <i className="bi bi-bounding-box-circles"></i>
                     </div>
                     <h4 className="title">
                       <a href="./" className="stretched-link">
-                        Sed ut perspiciatis
+                        Custom Solutions
                       </a>
                     </h4>
                   </div>
@@ -141,11 +141,11 @@ function App() {
                   data-aos-delay="300" */}
                   <div className="icon-box">
                     <div className="icon">
-                      <i className="bi bi-geo-alt"></i>
+                      <i className="bi bi-broadcast"></i>
                     </div>
                     <h4 className="title">
                       <a href="./" className="stretched-link">
-                        Magni Dolores
+                        Results-Driven
                       </a>
                     </h4>
                   </div>
@@ -160,7 +160,7 @@ function App() {
                     </div>
                     <h4 className="title">
                       <a href="./" className="stretched-link">
-                        Nemo Enim
+                        Innovation
                       </a>
                     </h4>
                   </div>
@@ -177,9 +177,11 @@ function App() {
             <div className="section-header">
               <h2>About Us</h2>
               <p>
-                Aperiam dolorum et et wuia molestias qui eveniet numquam nihil
-                porro incidunt dolores placeat sunt id nobis omnis tiledo stran
-                delop
+                Our mission is to empower businesses of all sizes with AI-driven
+                tools that enhance their decision-making capabilities. We
+                believe that by leveraging advanced algorithms and predictive
+                modelling, businesses can navigate complexities, seize
+                opportunities, and stay ahead of the curve.
               </p>
             </div>
 
@@ -193,9 +195,13 @@ function App() {
               </div>
               <div className="col-lg-6">
                 <div className="content ps-0 ps-lg-5">
-                  <h3 className="fst-italic">
-                    How AI/ML Revolutionises Decision-Making:
-                  </h3>
+                  <h5 className="fst-italic">
+                    At ——-name——-, we are driven by the vision of
+                    revolutionising decision-making through the power of AI and
+                    ML. As a leading innovator in the field, we specialise in
+                    crafting tailored solutions that enable businesses to
+                    transform data into strategic insights.
+                  </h5>
 
                   <p>
                     Our cutting-edge AI/ML solutions offer businesses a
@@ -554,11 +560,7 @@ function App() {
               <a href="index.html" className="logo d-flex align-items-center">
                 <span>Revolve</span>
               </a>
-              <p>
-                Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
-                nada terra videa magna derita valies darta donna mare fermentum
-                iaculis eu non diam phasellus.
-              </p>
+              <p>Enhancing Business Decision-Making with AI/ML Solutions</p>
               <div className="social-links d-flex mt-4">
                 <a href="./" className="twitter">
                   <i className="bi bi-twitter"></i>
@@ -587,9 +589,7 @@ function App() {
                 <li>
                   <a href="./">Services</a>
                 </li>
-                <li>
-                  <a href="./">Terms of service</a>
-                </li>
+
                 <li>
                   <a href="./">Privacy policy</a>
                 </li>
@@ -606,13 +606,10 @@ function App() {
                   <a href="./">Web Development</a>
                 </li>
                 <li>
-                  <a href="./">Product Management</a>
+                  <a href="./">Video Editing</a>
                 </li>
                 <li>
-                  <a href="./">Marketing</a>
-                </li>
-                <li>
-                  <a href="./">Graphic Design</a>
+                  <a href="./">ML Solution</a>
                 </li>
               </ul>
             </div>
@@ -620,9 +617,14 @@ function App() {
             <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
               <h4>Contact Us</h4>
               <p>
-                A108 Adam Street New York, NY 535022 United States
-                <strong>Phone:</strong> +1 5589 55488 55
-                <strong>Email:</strong> info@example.com
+                MVJ college of engingr5d ctgyuhnfr5dert e5trcvgyb ctfvg
+                <p>
+                  <strong>Phone:</strong> +91 9876543210
+                </p>
+                <p>
+                  {" "}
+                  <strong>Email:</strong> info@example.com
+                </p>
               </p>
             </div>
           </div>
