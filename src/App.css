@@ -22,7 +22,7 @@
 /* Colors */
 :root {
   --color-default: #8c8e94;
-  --color-primary: #0b133e;
+  --color-primary: #000000;
   --color-secondary: #fff;
 }
 .hero-img {
@@ -49,7 +49,7 @@
 body {
   font-family: var(--font-default);
   color: #cdcdcd;
-  background-color: #080e34;
+  background-color: #000000;
 }
 
 .navbars {
@@ -565,7 +565,7 @@ section {
   .navbar .getstarted:hover,
   .navbar .getstarted:focus:hover {
     color: #fff;
-    background: #0b133e;
+    background: #0c0b0b;
   }
 
   .navbar .dropdown ul,
@@ -958,11 +958,12 @@ section {
 --------------------------------------------------------------*/
 .services {
   padding: 60px 0;
+  background-color: #000;
 }
 
 .services .service-item {
   padding: 40px;
-  background: #050b2d;
+  background: #171717;
   height: 100%;
   border-radius: 10px;
 }
@@ -987,7 +988,7 @@ section {
   content: "";
   height: 100%;
   width: 100%;
-  background: #182d83;
+  background: #d488c2;
   border-radius: 50px;
   z-index: 1;
   top: 10px;
@@ -1020,7 +1021,7 @@ section {
 }
 
 .services .service-item:hover .icon:before {
-  background: #4a6cf7;
+  background: #6a7bc5;
 }
 
 .services .service-item:hover h3 {
@@ -1985,7 +1986,7 @@ section {
     left: 0px;
     right: 0px;
     height: calc(50% + 20px);
-    background-color: #080e34;
+    background-color: #010101;
   }
 }
 
