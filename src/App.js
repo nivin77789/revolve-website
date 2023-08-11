@@ -1,5 +1,6 @@
 import "./App.css";
 import React from "react";
+import TrackVisibility from "react-on-screen";
 
 function App() {
   return (
@@ -185,23 +186,23 @@ function App() {
               </p>
             </div>
 
-            <div className="row gy-4">
-              <div className="col-lg-6">
+            <div className="row abt gy-4">
+              <div className="col-lg-6 abt-img">
                 <img
                   src="assets/img/about.png"
-                  className="img-fluid rounded-4 mb-4"
+                  className="img-fluid ab-img rounded-4 mb-4"
                   alt=""
                 />
               </div>
               <div className="col-lg-6">
                 <div className="content ps-0 ps-lg-5">
-                  <h5 className="fst-italic">
+                  <p className="fst-italic">
                     At ——-name——-, we are driven by the vision of
                     revolutionising decision-making through the power of AI and
                     ML. As a leading innovator in the field, we specialise in
                     crafting tailored solutions that enable businesses to
                     transform data into strategic insights.
-                  </h5>
+                  </p>
 
                   <p>
                     Our cutting-edge AI/ML solutions offer businesses a
@@ -237,9 +238,10 @@ function App() {
             <div className="section-header">
               <h2>Our Services</h2>
               <p>
-                Aperiam dolorum et et wuia molestias qui eveniet numquam nihil
-                porro incidunt dolores placeat sunt id nobis omnis tiledo stran
-                delop
+                At our companies name, we are committed to being your strategic
+                partner on the journey to data-driven success. We collaborate
+                closely with you to understand your needs and tailor solutions
+                that empower your business to make confident decisions.
               </p>
             </div>
 
@@ -357,10 +359,8 @@ function App() {
             <h3>Call To Action</h3>
             <p>
               {" "}
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
+              Join us in embracing the future of decision-making. Explore the
+              potential of AI/ML with name.
             </p>
             <a className="cta-btn" href="./">
               Call To Action
