@@ -60,7 +60,99 @@
   align-items: center;
   justify-content: center;
 }
-
+.text-grad {
+  background: #d488c2;
+  background: linear-gradient(to right, #d488c2 0%, #7dc8f3 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.marq {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 100px;
+  width: 1000px;
+}
+.marq-s {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.marq img {
+  filter: grayscale(100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  padding-right: 50px;
+}
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .marq {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    width: 400px;
+  }
+  .marq-s {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .marq img {
+    filter: grayscale(100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .marq {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px;
+    width: 500px;
+  }
+  .marq-s {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .marq img {
+    filter: grayscale(100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .marq {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 100px;
+    width: 1000px;
+  }
+  .marq-s {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .marq img {
+    filter: grayscale(100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    padding-right: 50px;
+  }
+}
 .abt-img {
   display: flex;
   align-items: center;
@@ -89,7 +181,7 @@ body {
     linear-gradient(
       90deg,
       #141414 0.25px,
-      transparent 0.25px,
+      transparent 0.4px,
       transparent calc(100% - 0.25px),
       #141414 calc(100% - 0.25px)
     );
