@@ -243,7 +243,7 @@ function App() {
               </p>
             </div>
 
-            <div className="row about-div abt gy-4" data-aos="slide-right">
+            <div className="row about-div abt gy-4" data-aos="fade-right">
               <div className="col-lg-6 abt-img">
                 <img
                   src="assets/img/about.png"
@@ -442,7 +442,6 @@ function App() {
                 <form
                   action="forms/contact.php"
                   method="post"
-                  role="form"
                   className="php-email-form"
                 >
                   <div className="row">
