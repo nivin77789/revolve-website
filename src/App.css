@@ -21,13 +21,46 @@
 
 /* Colors */
 :root {
-  --color-default: #8c8e94;
+  --color-default: #ffffff;
   --color-primary: #000000;
   --color-secondary: #fff;
 }
-.hero-img {
-  width: 500px;
+
+#tsparticles {
+  height: 100vh;
+  width: 100vw;
 }
+.moveArrow {
+  animation-name: mymove;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1s;
+}
+
+@keyframes mymove {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(30px);
+  }
+}
+
+.about-div {
+  border: 0.3px solid rgb(129, 129, 129);
+  border-radius: 20px;
+  background: linear-gradient(
+    143deg,
+    rgba(0, 0, 0, 1) 58%,
+    rgba(237, 89, 215, 0.6265099789915967) 88%
+  );
+}
+.baner-im {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .abt-img {
   display: flex;
   align-items: center;
@@ -47,6 +80,21 @@
 # General
 --------------------------------------------------------------*/
 body {
+  background-image: linear-gradient(
+      #141414 0.25px,
+      transparent 0.25px,
+      transparent calc(100% - 0.25px),
+      #141414 calc(100% - 0.25px)
+    ),
+    linear-gradient(
+      90deg,
+      #141414 0.25px,
+      transparent 0.25px,
+      transparent calc(100% - 0.25px),
+      #141414 calc(100% - 0.25px)
+    );
+  background-size: 10% 5%;
+  border: 0.25px solid #141414;
   font-family: var(--font-default);
   color: #cdcdcd;
   background-color: #000000;
@@ -201,7 +249,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: rgba(248, 90, 64, 0.8);
+  background: #20b5ff;
   color: #fff;
 }
 
@@ -339,7 +387,7 @@ section {
 }
 
 .header .logo h1 span {
-  color: #f96f59;
+  color: #dc59f9;
 }
 
 .sticked-header-offset {
@@ -833,14 +881,23 @@ section {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action .container {
-  background: #0f1748;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    143deg,
+    rgb(11, 2, 9) 0%,
+    rgba(0, 0, 0, 1) 44%,
+    rgba(89, 158, 237, 0.3155856092436975) 90%
+  );
   box-shadow: 5px 5px 5px 10px rgba(1, 1, 23, 0.145);
   background-size: cover;
   padding: 100px 60px;
+  border: 2px solid rgb(20, 20, 20);
   border-radius: 15px;
   overflow: hidden;
 }
-
+.home-btn {
+  margin-top: 40px;
+}
 .call-to-action h3 {
   color: #fff;
   font-size: 28px;
@@ -857,10 +914,7 @@ section {
   width: 94px;
   height: 94px;
   margin-bottom: 20px;
-  background: radial-gradient(
-    var(--color-primary) 50%,
-    rgba(0, 131, 116, 0.4) 52%
-  );
+  background: radial-gradient(var(--color-primary) 50%, #ffffff15 52%);
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -879,7 +933,7 @@ section {
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(0, 131, 116, 0.7);
+  border: 5px solid rgba(255, 255, 255, 0.7);
   top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
@@ -963,7 +1017,7 @@ section {
 
 .services .service-item {
   padding: 40px;
-  background: #171717;
+  background: #0f0f0f;
   height: 100%;
   border-radius: 10px;
 }
@@ -1021,7 +1075,7 @@ section {
 }
 
 .services .service-item:hover .icon:before {
-  background: #6a7bc5;
+  background: #4fa1f3;
 }
 
 .services .service-item:hover h3 {
@@ -1911,7 +1965,7 @@ section {
 }
 
 .hero h2 {
-  font-size: 48px;
+  font-size: 90px;
   font-weight: 700;
   margin-bottom: 20px;
   color: #fff;
@@ -1933,13 +1987,13 @@ section {
   border-radius: 50px;
   transition: 0.3s;
   color: #fff;
-  background: rgba(255, 255, 255, 0.1);
+  background: #d488c2;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid #d488c2;
 }
 
 .hero .btn-get-started:hover {
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: #ffffff;
 }
 
 .hero .btn-watch-video {
@@ -1959,7 +2013,7 @@ section {
 }
 
 .hero .btn-watch-video:hover i {
-  color: #fff;
+  color: #28c0f8;
 }
 
 @media (max-width: 640px) {
@@ -1994,7 +2048,7 @@ section {
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background: #0f1748;
+  background: #0b0a0a;
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
@@ -2022,16 +2076,16 @@ section {
   transition: all 0.3s ease-in-out;
   font-size: 48px;
   line-height: 1;
-  color: rgba(255, 255, 255, 0.6);
+  color: #d488c2;
 }
 
 .hero .icon-box:hover {
-  background: #172162;
+  background: #000000;
 }
 
 .hero .icon-box:hover .title a,
 .hero .icon-box:hover .icon {
-  color: #fff;
+  color: #6f89f9;
 }
 
 /*--------------------------------------------------------------

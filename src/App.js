@@ -1,36 +1,67 @@
 import "./App.css";
-import React from "react";
-
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import TrackVisibility from "react-on-screen";
 function App() {
-  return (
-    <div classNameName="App">
-      {/* <section id="topbar" className="topbar d-flex align-items-center">
-        <div className="container d-flex justify-content-center justify-content-md-between">
-          <div className="contact-info d-flex align-items-center">
-            <i className="bi bi-envelope d-flex align-items-center">
-              <a href="mailto:contact@example.com">contact@example.com</a>
-            </i>
-            <i className="bi bi-phone d-flex align-items-center ms-4">
-              <span>+1 5589 55488 55</span>
-            </i>
-          </div>
-          <div className="social-links d-none d-md-flex align-items-center">
-            <a href="./" className="twitter">
-              <i className="bi bi-twitter"></i>
-            </a>
-            <a href="./" className="facebook">
-              <i className="bi bi-facebook"></i>
-            </a>
-            <a href="./" className="instagram">
-              <i className="bi bi-instagram"></i>
-            </a>
-            <a href="./" className="linkedin">
-              <i className="bi bi-linkedin"></i>
-            </a>
-          </div>
-        </div>
-      </section> */}
+  //data-aos
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
+  //changing words
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [text, setText] = useState("");
+  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [index, setIndex] = useState(1);
+  console.log(index);
+  const toRotate = [
+    "Machine Learning Engineer",
+    "Data Scientist",
+    "Web Developer",
+    "Web Designer",
+    "UI/UX Designer",
+  ];
+  const period = 2000;
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => {
+      clearInterval(ticker);
+    };
+  });
+
+  const tick = () => {
+    let i = loopNum % toRotate.length;
+    let fullText = toRotate[i];
+    let updatedText = isDeleting
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
+
+    setText(updatedText);
+
+    if (isDeleting) {
+      setDelta((prevDelta) => prevDelta / 2);
+    }
+
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setIndex((prevIndex) => prevIndex - 1);
+      setDelta(period);
+    } else if (isDeleting && updatedText === "") {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setIndex(1);
+      setDelta(500);
+    } else {
+      setIndex((prevIndex) => prevIndex + 1);
+    }
+  };
+  return (
+    <div className="App">
       <header id="header" className="header d-flex align-items-center">
         <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
           <a href="index.html" className="logo d-flex align-items-center">
@@ -50,15 +81,6 @@ function App() {
               <li>
                 <a href="#services">Services</a>
               </li>
-              <li>
-                <a href="#portfolio">Portfolio</a>
-              </li>
-              <li>
-                <a href="#team">Team</a>
-              </li>
-              <li>
-                <a href="blog.html">Blog</a>
-              </li>
 
               <li>
                 <a href="#contact">Contact</a>
@@ -72,15 +94,32 @@ function App() {
       </header>
       <section id="hero" className="hero">
         <div className="container position-relative">
-          {/* 
-        <div className="row gy-5" data-aos="fade-in"> */}
-          <div className="row gy-5">
+          <div className="row gy-5" data-aos="fade-in">
             <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
-              <h2>
-                Welcome to <span>Revolve</span>
-              </h2>
-              <p> Enhancing Business Decision-Making with AI/ML Solutions</p>
-              <div className="d-flex justify-content-center justify-content-lg-start">
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <div
+                    className={
+                      isVisible ? "animate__animated animate__fadeIn" : ""
+                    }
+                  >
+                    <h2>
+                      Welcome to <span>Revolve</span>
+                    </h2>
+                    <h1>
+                      {`Enhancing Business Decision-Making with`}{" "}
+                      <span
+                        className="txt-rotate"
+                        dataPeriod="1000"
+                        data-rotate='["AI/ML Solutions","Data Scientist", "Web Developer", "Web Designer", "UI/UX Designer"]'
+                      >
+                        <span className="wrap">{text}</span>
+                      </span>
+                    </h1>
+                  </div>
+                )}
+              </TrackVisibility>
+              <div className="d-flex home-btn justify-content-center justify-content-lg-start">
                 <a href="#about" className="btn-get-started">
                   Get Started
                 </a>
@@ -93,22 +132,24 @@ function App() {
                 </a>
               </div>
             </div>
-            <div className="col-lg-6 order-1 order-lg-2">
+            <div className="col-lg-6 order-1 order-lg-2 baner-im">
               <img
                 src="assets/img/hero.png"
-                className="img-fluid hero-img"
+                className="img-fluid hero-img moveArrow"
                 alt=""
+                data-aos="zoom-out"
+                data-aos-delay="100"
               />
-              {/* data-aos="zoom-out"
-                data-aos-delay="100" */}
             </div>
           </div>
           <div className="icon-boxes position-relative">
             <div className="container position-relative">
               <div className="row gy-4 mt-5">
-                <div className="col-xl-3 col-md-6">
-                  {/* data-aos="fade-up"
-                  data-aos-delay="100" */}
+                <div
+                  className="col-xl-3 col-md-6"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
                   <div className="icon-box">
                     <div className="icon">
                       <i className="bi bi-easel"></i>
@@ -121,9 +162,11 @@ function App() {
                   </div>
                 </div>
 
-                <div className="col-xl-3 col-md-6">
-                  {/* data-aos="fade-up"
-                  data-aos-delay="200" */}
+                <div
+                  className="col-xl-3 col-md-6"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   <div className="icon-box">
                     <div className="icon">
                       <i className="bi bi-bounding-box-circles"></i>
@@ -136,9 +179,11 @@ function App() {
                   </div>
                 </div>
 
-                <div className="col-xl-3 col-md-6">
-                  {/* data-aos="fade-up"
-                  data-aos-delay="300" */}
+                <div
+                  className="col-xl-3 col-md-6"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
                   <div className="icon-box">
                     <div className="icon">
                       <i className="bi bi-broadcast"></i>
@@ -151,9 +196,11 @@ function App() {
                   </div>
                 </div>
 
-                <div className="col-xl-3 col-md-6">
-                  {/* data-aos="fade-up"
-                  data-aos-delay="500" */}
+                <div
+                  className="col-xl-3 col-md-6"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
                   <div className="icon-box">
                     <div className="icon">
                       <i className="bi bi-command"></i>
@@ -172,8 +219,7 @@ function App() {
       </section>
       <main id="main">
         <section id="about" className="about">
-          <div className="container">
-            {/* data-aos="fade-up" */}
+          <div className="container" data-aos="fade-up">
             <div className="section-header">
               <h2>About Us</h2>
               <p>
@@ -185,11 +231,11 @@ function App() {
               </p>
             </div>
 
-            <div className="row abt gy-4">
+            <div className="row about-div abt gy-4" data-aos="slide-right">
               <div className="col-lg-6 abt-img">
                 <img
                   src="assets/img/about.png"
-                  className="img-fluid ab-img rounded-4 mb-4"
+                  className="img-fluid ab-img rounded-4 mb-4 moveArrow"
                   alt=""
                 />
               </div>
@@ -211,20 +257,6 @@ function App() {
                     identify opportunities, and mitigate risks with
                     unprecedented accuracy.
                   </p>
-
-                  {/* <div className="position-relative mt-4">
-                    <img
-                      src="assets/img/about-2.jpg"
-                      className="img-fluid rounded-4"
-                      alt=""
-                    />
-                    <a
-                      href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-                      className="glightbox play-btn"
-                    >
-                      1
-                    </a>
-                  </div> */}
                 </div>
               </div>
             </div>
@@ -232,8 +264,7 @@ function App() {
         </section>
 
         <section id="services" className="services sections-bg">
-          <div className="container">
-            {/* data-aos="fade-up" */}
+          <div className="container " data-aos="fade-up">
             <div className="section-header">
               <h2>Our Services</h2>
               <p>
@@ -244,9 +275,8 @@ function App() {
               </p>
             </div>
 
-            <div className="row gy-4">
-              {/* data-aos="fade-up" data-aos-delay="100" */}
-              <div className="col-lg-4 col-md-6">
+            <div className="row gy-4" data-aos="fade-up" data-aos-delay="100">
+              <div className="col-lg-4 col-md-6 ">
                 <div className="service-item position-relative">
                   <div className="icon">
                     <i className="bi bi-activity"></i>
@@ -257,13 +287,10 @@ function App() {
                     accusantium minus dolores iure perferendis tempore et
                     consequatur.
                   </p>
-                  <a href="./" className="readmore stretched-link">
-                    Read more <i className="bi bi-arrow-right"></i>
-                  </a>
                 </div>
               </div>
 
-              <div className="col-lg-4 col-md-6">
+              <div className="col-lg-4 col-md-6 ">
                 <div className="service-item position-relative">
                   <div className="icon">
                     <i className="bi bi-broadcast"></i>
@@ -273,9 +300,6 @@ function App() {
                     Ut autem aut autem non a. Sint sint sit facilis nam iusto
                     sint. Libero corrupti neque eum hic non ut nesciunt dolorem.
                   </p>
-                  <a href="./" className="readmore stretched-link">
-                    Read more <i className="bi bi-arrow-right"></i>
-                  </a>
                 </div>
               </div>
 
@@ -290,9 +314,6 @@ function App() {
                     Minus ea aut. Vel qui id voluptas adipisci eos earum
                     corrupti.
                   </p>
-                  <a href="./" className="readmore stretched-link">
-                    Read more <i className="bi bi-arrow-right"></i>
-                  </a>
                 </div>
               </div>
 
@@ -306,9 +327,6 @@ function App() {
                     Non et temporibus minus omnis sed dolor esse consequatur.
                     Cupiditate sed error ea fuga sit provident adipisci neque.
                   </p>
-                  <a href="./" className="readmore stretched-link">
-                    Read more <i className="bi bi-arrow-right"></i>
-                  </a>
                 </div>
               </div>
 
@@ -323,9 +341,6 @@ function App() {
                     aut ipsam corporis aut. Sed animi at autem alias eius
                     labore.
                   </p>
-                  <a href="./" className="readmore stretched-link">
-                    Read more <i className="bi bi-arrow-right"></i>
-                  </a>
                 </div>
               </div>
 
@@ -339,9 +354,6 @@ function App() {
                     Hic molestias ea quibusdam eos. Fugiat enim doloremque aut
                     neque non et debitis iure. Corrupti recusandae ducimus enim.
                   </p>
-                  <a href="./" className="readmore stretched-link">
-                    Read more <i className="bi bi-arrow-right"></i>
-                  </a>
                 </div>
               </div>
             </div>
@@ -349,12 +361,13 @@ function App() {
         </section>
 
         <section id="call-to-action" className="call-to-action">
-          <div className="container text-center">
-            {/* data-aos="zoom-out" */}
+          <div className="container text-center" data-aos="zoom-out">
             <a
               href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
               className="glightbox play-btn"
-            ></a>
+            >
+              .
+            </a>
             <h3>Call To Action</h3>
             <p>
               {" "}
@@ -457,13 +470,11 @@ function App() {
       </footer>
 
       <a
-        href="#"
+        href="./"
         class="scroll-top d-flex align-items-center justify-content-center"
       >
         <i class="bi bi-arrow-up-short"></i>
       </a>
-
-      {/* <div id="preloader"></div> */}
 
       <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       <script src="assets/vendor/aos/aos.js"></script>
