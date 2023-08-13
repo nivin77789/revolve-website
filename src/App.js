@@ -278,7 +278,7 @@ function App() {
             </div>
 
             <div className="row about-div abt gy-4" data-aos="fade-right">
-              <div className="col-lg-6 abt-img">
+              <div className="col-lg-6 abt-img ab-img1">
                 <img
                   src="assets/img/about.png"
                   className="img-fluid ab-img rounded-4 mb-4 moveArrow"
@@ -328,10 +328,10 @@ function App() {
                   </p>
                 </div>
               </div>
-              <div className="col-lg-6 abt-img">
+              <div className="col-lg-6 abt-img ab-img2">
                 <img
-                  src="assets/img/about1.png"
-                  className="img-fluid ab-img rounded-4 mb-4 moveArrow"
+                  className="img-fluid ab-img   rounded-4 mb-4 moveArrow"
+                  src="assets/img/about3.png"
                   alt=""
                 />
               </div>
