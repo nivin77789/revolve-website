@@ -17,11 +17,28 @@ function App() {
   const [index, setIndex] = useState(1);
   console.log(index);
   const toRotate = [
-    "Machine Learning Engineer",
-    "Data Scientist",
-    "Web Developer",
-    "Web Designer",
-    "UI/UX Designer",
+    "Customised Chatbots",
+    "Predictive Maintenance",
+    "Medical Imaging Analysis",
+    "Supply Chain Optimisation",
+    "Personalised Marketing",
+    "Natural Language Processing Services",
+    "Fraud Detection",
+    "Smart City Solutions",
+    "Automated Content Generation",
+    "Emotion Recognition",
+    "Financial Forecasting",
+    "Custom Voice Assistants",
+    "Visual Recognition Solutions",
+    "AI-Driven Cybersecurity",
+    "Recommender Systems",
+    "Healthcare Predictive Analytics",
+    "Automated Financial Advisors (NLG)",
+    "Smart Home Solutions",
+    "Digital Media Optimisation",
+    "Customer Behaviour Prediction",
+    "Retail AI Solutions",
+    "Automated Research Assistance",
   ];
   const period = 2000;
 
@@ -64,6 +81,26 @@ function App() {
   const arr = [1, 2, 3, 4, 5, 6, 7];
   return (
     <div className="App">
+      <div className="tab-container">
+        <nav className="menu">
+          <a href="#hero" className="menu-item">
+            <span className="material-icons">home</span>
+            <span className="menu-item-label">Home</span>
+          </a>
+          <a href="#about" className="menu-item">
+            <span className="material-icons">groups</span>
+            <span className="menu-item-label">About</span>
+          </a>
+          <a href="#services" className="menu-item">
+            <span className="material-icons">lan</span>
+            <span className="menu-item-label">Services</span>
+          </a>
+          <a href="#contact" className="menu-item">
+            <span className="material-icons">contacts</span>
+            <span className="menu-item-label">Contact us</span>
+          </a>
+        </nav>
+      </div>
       <header id="header" className="header d-flex align-items-center">
         <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
           <a href="index.html" className="logo d-flex align-items-center">
@@ -89,11 +126,8 @@ function App() {
               </li>
             </ul>
           </nav>
-
-          <i className="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-          <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
         </div>
-      </header>
+      </header>{" "}
       <section id="hero" className="hero">
         <div className="container position-relative">
           <div className="row gy-5" data-aos="fade-in">
@@ -270,6 +304,36 @@ function App() {
                     unprecedented accuracy.
                   </p>
                 </div>
+              </div>
+            </div>
+
+            <div className="row about-div2 abt gy-4" data-aos="fade-left">
+              <div className="col-lg-6">
+                <div className="content ps-0 ps-lg-5">
+                  <p className="fst-italic">
+                    At ——-name——-, we are driven by the vision of
+                    revolutionising decision-making through the power of AI and
+                    ML. As a leading innovator in the field, we specialise in
+                    crafting tailored solutions that enable businesses to
+                    transform data into strategic insights.
+                  </p>
+
+                  <p>
+                    Our cutting-edge AI/ML solutions offer businesses a
+                    competitive edge by transforming raw data into actionable
+                    insights. Through advanced algorithms and predictive
+                    modelling, we enable companies to anticipate market trends,
+                    identify opportunities, and mitigate risks with
+                    unprecedented accuracy.
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-6 abt-img">
+                <img
+                  src="assets/img/about1.png"
+                  className="img-fluid ab-img rounded-4 mb-4 moveArrow"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -501,7 +565,6 @@ function App() {
           </div>
         </section>
       </main>
-
       <footer id="footer" className="footer">
         <div className="container">
           <div className="row gy-4">
@@ -589,14 +652,12 @@ function App() {
           </div>
         </div>
       </footer>
-
       <a
         href="./"
         class="scroll-top d-flex align-items-center justify-content-center"
       >
         <i class="bi bi-arrow-up-short"></i>
       </a>
-
       <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       <script src="assets/vendor/aos/aos.js"></script>
       <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -604,7 +665,6 @@ function App() {
       <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
       <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
       <script src="assets/vendor/php-email-form/validate.js"></script>
-
       <script src="assets/js/main.js"></script>
     </div>
   );

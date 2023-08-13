@@ -11,6 +11,140 @@
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 /* Fonts */
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.tab-container {
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu {
+  display: flex;
+  flex-grow: 1;
+  border: 1px dotted rgba(128, 128, 128, 0.238);
+
+  border-bottom: none;
+  height: 50px;
+  max-width: 370px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  overflow: hidden;
+  background-color: #131217;
+  box-shadow: 0 0 1px 0 rgba(#342ead, 0.25), 0 15px 30px 0 rgba(#342ead, 0.1);
+}
+
+.menu-item {
+  color: #ffffff79;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  text-decoration: none;
+  &:focus,
+  &:hover {
+    outline: none;
+    .material-icons {
+      font-family: "Material Icons";
+      color: #342ead;
+    }
+
+    .menu-item-label {
+      color: #342ead;
+    }
+  }
+}
+
+.material-icons {
+  font-family: "Material Icons Outlined";
+  display: block;
+  margin-bottom: 4px;
+  font-size: 24px;
+  color: mix(#fff, #342ead, 60%);
+  transition: 0.25s ease;
+}
+
+.menu-item-label {
+  display: block;
+  font-size: 8px;
+  color: mix(#fff, #342ead, 70%);
+  transition: 0.25s ease;
+}
+@media only screen and (max-width: 698px) {
+  .tab-container {
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu {
+    display: flex;
+    flex-grow: 1;
+    border: 1px solid rgba(71, 70, 70, 0.238);
+
+    border-bottom: none;
+    height: 60px;
+    max-width: 95%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    overflow: hidden;
+    background-color: #0f0f0fdf;
+    box-shadow: 0 0 1px 0 rgba(#342ead, 0.25), 0 15px 30px 0 rgba(#342ead, 0.1);
+  }
+
+  .menu-item {
+    color: #ffffff79;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-decoration: none;
+    &:focus,
+    &:hover {
+      outline: none;
+      .material-icons {
+        font-family: "Material Icons";
+        color: #342ead;
+      }
+
+      .menu-item-label {
+        color: #342ead;
+      }
+    }
+  }
+
+  .material-icons {
+    font-family: "Material Icons Outlined";
+    display: block;
+    margin-bottom: 4px;
+    font-size: 24px;
+    color: mix(#fff, #342ead, 60%);
+    transition: 0.25s ease;
+  }
+
+  .menu-item-label {
+    display: block;
+    font-size: 8px;
+    color: mix(#fff, #342ead, 70%);
+    transition: 0.25s ease;
+  }
+}
+
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
@@ -47,12 +181,23 @@
 }
 
 .about-div {
-  border: 0.3px solid rgb(129, 129, 129);
+  border: 0.3px solid rgba(129, 129, 129, 0.648);
   border-radius: 20px;
   background: linear-gradient(
     143deg,
     rgba(0, 0, 0, 1) 58%,
     rgba(237, 89, 215, 0.6265099789915967) 88%
+  );
+  margin-bottom: 20px;
+}
+.about-div2 {
+  margin-top: 20px;
+  border: 0.3px solid rgba(129, 129, 129, 0.636);
+  border-radius: 20px;
+  background: linear-gradient(
+    217deg,
+    rgba(3, 3, 3, 1) 70%,
+    rgba(89, 155, 237, 0.8842130602240896) 100%
   );
 }
 .baner-im {
@@ -644,6 +789,7 @@ section {
 --------------------------------------------------------------*/
 @media (max-width: 1279px) {
   .navbar {
+    display: none;
     position: fixed;
     top: 0;
     right: -100%;
@@ -1946,7 +2092,7 @@ section {
   background: linear-gradient(
     180deg,
     rgb(14, 14, 14) 81%,
-    rgba(197, 89, 237, 0.8842130602240896) 100%
+    rgba(197, 89, 237, 0.34) 100%
   );
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
   padding: 30px;
