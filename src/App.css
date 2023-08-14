@@ -11,6 +11,48 @@
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 /* Fonts */
+
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.075),
+      0 0 0.125em hsla(320, 100%, 60%, 0.156),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+
+  30% {
+    color: hsl(230, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.257),
+      0 0 0.125em hsla(320, 100%, 60%, 0.213),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.112),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.255);
+  }
+
+  40% {
+    color: hsl(230, 100%, 95%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.298),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.12),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.254);
+  }
+
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.19),
+      0 0 0.125em hsla(320, 100%, 60%, 0.284),
+      0.5em -0.125em 0.25em hsla(210, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.253);
+  }
+
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.23),
+      1em -0.125em 0.5em hsla(194, 100%, 60%, 0.264),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0.158);
+  }
+}
 *:after,
 *:before {
   box-sizing: border-box;
@@ -35,12 +77,11 @@
 .menu {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-
-  border: 0.5px solid rgba(128, 128, 128, 0.313);
+  border: 0.1px solid rgba(59, 59, 59, 0.313);
   border-bottom: none;
   display: flex;
   flex-grow: 1;
-  height: 50px;
+  height: 40px;
   max-width: 370px;
   overflow: hidden;
   background-color: #0c0c0c;
@@ -100,8 +141,8 @@
     flex-grow: 1;
     border: 1px solid rgba(71, 70, 70, 0.238);
     border-bottom: none;
-    height: 60px;
-    max-width: 98%;
+    height: 40px;
+    max-width: 90%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     overflow: hidden;
@@ -208,6 +249,7 @@
   justify-content: center;
 }
 .text-grad {
+  animation: lights 3s 750ms linear infinite;
   background: #d488c2;
   background: linear-gradient(to right, #d488c2 0%, #7dc8f3 100%);
   background-clip: text;
@@ -314,8 +356,9 @@
   margin-right: 10px;
 }
 .abt p {
+  line-height: 200%;
   text-align: justify;
-  font-size: 16px;
+  font-size: 18px;
   margin: 5px;
   padding-bottom: 15px;
 }
@@ -1151,6 +1194,7 @@ section {
   border-radius: 25px;
   overflow: hidden;
 }
+
 .home-btn {
   margin-top: 40px;
 }
@@ -1272,6 +1316,7 @@ section {
 }
 
 .services .service-item {
+  transition: transform 0.2s;
   padding: 40px;
   background: #0f0f0f;
   height: 100%;
@@ -1328,6 +1373,12 @@ section {
   margin-top: 15px;
   display: inline-block;
   color: var(--color-primary);
+}
+.services .service-item:hover {
+  background: #0b0b0b;
+  border: 1px solid rgb(26, 26, 26);
+  transform: scale(1.05);
+  z-index: 100;
 }
 
 .services .service-item:hover .icon:before {
@@ -2166,7 +2217,7 @@ section {
 .contact .php-email-form textarea {
   background-color: #0d0d0d;
   border-radius: 15px;
-  border: 1px solid rgb(135, 135, 135);
+  border: 1px solid rgb(59, 59, 59);
   box-shadow: none;
   font-size: 14px;
 }

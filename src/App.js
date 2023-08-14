@@ -3,11 +3,23 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import TrackVisibility from "react-on-screen";
 import Marquee from "react-fast-marquee";
+// import $ from "jquery";
+
 function App() {
   //data-aos
   useEffect(() => {
     AOS.init();
   }, []);
+  //spotlight
+  // $("body").mousemove(function (e) {
+  //   let x = e.pageX;
+  //   let y = e.pageY;
+
+  //   $("body").css(
+  //     "background",
+  //     "radial-gradient(circle at " + x + "px " + y + "px, #151515, #000 2% )"
+  //   );
+  // });
 
   //changing words
   const [loopNum, setLoopNum] = useState(0);
@@ -40,7 +52,7 @@ function App() {
     "Retail AI Solutions",
     "Automated Research Assistance",
   ];
-  const period = 2000;
+  const period = 5000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -84,19 +96,19 @@ function App() {
       <div className="tab-container">
         <nav className="menu">
           <a href="#hero" className="menu-item">
-            <span className="material-icons">home</span>
+            <i class="uil uil-estate"></i>
             {/* <span className="menu-item-label">Home</span> */}
           </a>
           <a href="#about" className="menu-item">
-            <span className="material-icons">groups</span>
+            <i class="uil uil-users-alt"></i>
             {/* <span className="menu-item-label">About</span> */}
           </a>
           <a href="#services" className="menu-item">
-            <span className="material-icons">lan</span>
+            <i class="uil uil-servers"></i>
             {/* <span className="menu-item-label">Services</span> */}
           </a>
           <a href="#contact" className="menu-item">
-            <span className="material-icons">contacts</span>
+            <i class="uil uil-chat"></i>
             {/* <span className="menu-item-label">Contact us</span> */}
           </a>
         </nav>
@@ -143,7 +155,8 @@ function App() {
                       Welcome to <span className="text-grad">Revolve</span>
                     </h2>
                     <h1>
-                      {`Enhancing Business Decision-Making with`}{" "}
+                      {/* <h3> */}
+                      {`Transforming Possibilities into Reality with `}{" "}
                       <span
                         className="txt-rotate"
                         dataPeriod="1000"
@@ -151,6 +164,7 @@ function App() {
                       >
                         <span className="wrap">{text}</span>
                       </span>
+                      {/* </h3> */}
                     </h1>
                   </div>
                 )}
@@ -456,7 +470,7 @@ function App() {
                     <i className="bi bi-geo-alt flex-shrink-0"></i>
                     <div>
                       <h4>Location:</h4>
-                      <p>A108 Adam Street, New York, NY 535022</p>
+                      <p> MVJ college of engingr5d ctgyuhnfvg</p>
                     </div>
                   </div>
 
