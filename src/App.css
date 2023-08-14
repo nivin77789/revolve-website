@@ -11,6 +11,49 @@
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 /* Fonts */
+.card {
+  width: 600px;
+  height: 254px;
+  margin: 0 auto;
+  background-color: #000000;
+  border-radius: 8px;
+  border: 0.2px solid grey;
+  z-index: 1;
+}
+.card__content {
+  padding: 15px;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  padding: 9px;
+}
+
+.circle {
+  padding: 0 4px;
+}
+
+.box {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #ff605c;
+}
+
+.yellow {
+  background-color: #ffbd44;
+}
+
+.green {
+  background-color: #00ca4e;
+}
 
 .pyramid-loader {
   position: relative;
@@ -67,15 +110,15 @@
 
 .pyramid-loader .wrapper .side4 {
   transform: rotateX(-30deg);
-  background: conic-gradient(#2bdedb, #f028fd, #d8cce6, #2f2585);
+  background: conic-gradient(#2bdedb, #f028fd, #d8cce6, #5d2585);
 }
 
 .pyramid-loader .wrapper .shadow {
-  width: 60px;
-  height: 60px;
-  background: #8b5ad5;
+  width: 220px;
+  height: 220px;
+  background: #b05ad597;
   position: absolute;
-  top: 0;
+  top: 150px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -305,6 +348,7 @@
     rgba(0, 0, 0, 1) 58%,
     rgba(237, 89, 215, 0.6265099789915967) 88%
   );
+  padding-bottom: 30px;
   margin-bottom: 40px;
 }
 .about-div2 {
@@ -1073,15 +1117,7 @@ section {
   font-weight: 700;
   color: var(--color-primary);
 }
-.content {
-  background-color: #14141471;
-  border-radius: 30px;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-}
+
 .content p {
   color: #999999;
   margin-left: 10px;

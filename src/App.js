@@ -310,13 +310,28 @@ function App() {
               </div>
               <div className="col-lg-6">
                 <div className="content ps-0 ps-lg-5">
-                  <p>
-                    At -—name--, we are driven by the vision of revolutionising
-                    decision-making through the power of AI&ML. As a leading
-                    innovator in the field, we specialise in crafting solutions
-                    that enable businesses to transform data into strategic
-                    insights.
-                  </p>
+                  <div class="card">
+                    <div class="tools">
+                      <div class="circle">
+                        <span class="red box"></span>
+                      </div>
+                      <div class="circle">
+                        <span class="yellow box"></span>
+                      </div>
+                      <div class="circle">
+                        <span class="green box"></span>
+                      </div>
+                    </div>
+                    <div class="card__content">
+                      <p>
+                        At -—name--, we are driven by the vision of
+                        revolutionising decision-making through the power of
+                        AI&ML. As a leading innovator in the field, we
+                        specialise in crafting solutions that enable businesses
+                        to transform data into strategic insights.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
