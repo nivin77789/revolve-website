@@ -293,11 +293,20 @@ function App() {
 
             <div className="row about-div abt gy-4" data-aos="fade-right">
               <div className="col-lg-6 abt-img ab-img1">
-                <img
+                {/* <img
                   src="assets/img/about.png"
                   className="img-fluid ab-img rounded-4 mb-4 moveArrow"
                   alt=""
-                />
+                /> */}
+                <div class="pyramid-loader">
+                  <div class="wrapper">
+                    <span class="side side1"></span>
+                    <span class="side side2"></span>
+                    <span class="side side3"></span>
+                    <span class="side side4"></span>
+                    <span class="shadow"></span>
+                  </div>
+                </div>
               </div>
               <div className="col-lg-6">
                 <div className="content ps-0 ps-lg-5">
@@ -327,10 +336,15 @@ function App() {
               </div>
               <div className="col-lg-6 abt-img ab-img2">
                 <img
+                  src="assets/img/about.png"
+                  className="img-fluid ab-img rounded-4 mb-4 moveArrow"
+                  alt=""
+                />
+                {/* <img
                   className="img-fluid ab-img   rounded-4 mb-4 moveArrow"
                   src="assets/img/about3.png"
                   alt=""
-                />
+                /> */}
               </div>
             </div>
           </div>
