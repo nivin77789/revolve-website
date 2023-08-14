@@ -85,19 +85,19 @@ function App() {
         <nav className="menu">
           <a href="#hero" className="menu-item">
             <span className="material-icons">home</span>
-            <span className="menu-item-label">Home</span>
+            {/* <span className="menu-item-label">Home</span> */}
           </a>
           <a href="#about" className="menu-item">
             <span className="material-icons">groups</span>
-            <span className="menu-item-label">About</span>
+            {/* <span className="menu-item-label">About</span> */}
           </a>
           <a href="#services" className="menu-item">
             <span className="material-icons">lan</span>
-            <span className="menu-item-label">Services</span>
+            {/* <span className="menu-item-label">Services</span> */}
           </a>
           <a href="#contact" className="menu-item">
             <span className="material-icons">contacts</span>
-            <span className="menu-item-label">Contact us</span>
+            {/* <span className="menu-item-label">Contact us</span> */}
           </a>
         </nav>
       </div>
@@ -277,7 +277,7 @@ function App() {
               </p>
             </div>
 
-            <div className="row about-div abt gy-4" data-aos="fade-right">
+            <div className="row about-div abt gy-4" data-aos="slide-right">
               <div className="col-lg-6 abt-img ab-img1">
                 <img
                   src="assets/img/about.png"
@@ -294,31 +294,14 @@ function App() {
                     crafting tailored solutions that enable businesses to
                     transform data into strategic insights.
                   </p>
-
-                  <p>
-                    Our cutting-edge AI/ML solutions offer businesses a
-                    competitive edge by transforming raw data into actionable
-                    insights. Through advanced algorithms and predictive
-                    modelling, we enable companies to anticipate market trends,
-                    identify opportunities, and mitigate risks with
-                    unprecedented accuracy.
-                  </p>
                 </div>
               </div>
             </div>
 
-            <div className="row about-div2 abt gy-4" data-aos="fade-left">
+            <div className="row about-div2 abt gy-4" data-aos="slide-left">
               <div className="col-lg-6">
                 <div className="content ps-0 ps-lg-5">
                   <p className="fst-italic">
-                    At ——-name——-, we are driven by the vision of
-                    revolutionising decision-making through the power of AI and
-                    ML. As a leading innovator in the field, we specialise in
-                    crafting tailored solutions that enable businesses to
-                    transform data into strategic insights.
-                  </p>
-
-                  <p>
                     Our cutting-edge AI/ML solutions offer businesses a
                     competitive edge by transforming raw data into actionable
                     insights. Through advanced algorithms and predictive

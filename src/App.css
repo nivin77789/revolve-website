@@ -26,22 +26,24 @@
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 10px;
+  bottom: 0;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .menu {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  border: 0.5px solid rgba(128, 128, 128, 0.313);
+  border-bottom: none;
   display: flex;
   flex-grow: 1;
-  height: 55px;
+  height: 50px;
   max-width: 370px;
-  border-radius: 24px;
   overflow: hidden;
-  border: 0.5px solid rgba(128, 128, 128, 0.313);
   background-color: #0c0c0c;
-  box-shadow: rgba(179, 73, 255, 0.1) 0px 0px 16px;
 }
 
 .menu-item {
@@ -307,6 +309,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 10px;
+
+  margin-right: 10px;
+}
+.abt p {
+  text-align: justify;
+  font-size: 16px;
+  margin: 5px;
+  padding-bottom: 15px;
 }
 /* Smooth scroll behavior */
 :root {
@@ -640,8 +651,8 @@ section {
 --------------------------------------------------------------*/
 @media (min-width: 1280px) {
   .navbar {
-    background-color: #1b1b1ba9;
-    border-radius: 30px;
+    background-color: #111111a9;
+    border-radius: 18px;
     padding: 0;
     padding-right: 25px;
     height: 60px;
@@ -1122,6 +1133,9 @@ section {
 /*--------------------------------------------------------------
 # Call To Action Section
 --------------------------------------------------------------*/
+.call-to-action {
+  margin: 10px;
+}
 .call-to-action .container {
   background: rgb(0, 0, 0);
   background: linear-gradient(
