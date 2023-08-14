@@ -458,8 +458,9 @@ function App() {
             <div className="section-header">
               <h2>Contact</h2>
               <p>
-                Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam
-                porro nihil id ratione ea sunt quis dolorem dolore earum
+                Ready to transform your decision-making? Get in touch with us
+                today to explore how our AI/ML solutions can revolutionise your
+                business strate
               </p>
             </div>
 
