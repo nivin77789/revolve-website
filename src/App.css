@@ -53,6 +53,9 @@
       -1em 0.125em 0.5em hsla(200, 100%, 60%, 0.158);
   }
 }
+.logo h1 {
+  animation: lights 3s 750ms linear infinite;
+}
 *:after,
 *:before {
   box-sizing: border-box;
@@ -248,6 +251,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .text-grad {
   animation: lights 3s 750ms linear infinite;
   background: #d488c2;
@@ -987,7 +991,7 @@ section {
   text-align: center;
 }
 
-.about .call-us h4 {
+0c0b0b .call-us h4 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 5px;
@@ -998,14 +1002,25 @@ section {
   font-weight: 700;
   color: var(--color-primary);
 }
-
+.content {
+  background-color: #14141471;
+  border-radius: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.content p {
+  color: #999999;
+  margin-left: 10px;
+}
 .about .content ul {
   list-style: none;
   padding: 0;
 }
 
 .about .content ul li {
-  padding: 0 0 10px 30px;
   position: relative;
 }
 

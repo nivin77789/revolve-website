@@ -291,7 +291,7 @@ function App() {
               </p>
             </div>
 
-            <div className="row about-div abt gy-4" data-aos="slide-right">
+            <div className="row about-div abt gy-4" data-aos="fade-right">
               <div className="col-lg-6 abt-img ab-img1">
                 <img
                   src="assets/img/about.png"
@@ -301,21 +301,21 @@ function App() {
               </div>
               <div className="col-lg-6">
                 <div className="content ps-0 ps-lg-5">
-                  <p className="fst-italic">
-                    At ——-name——-, we are driven by the vision of
-                    revolutionising decision-making through the power of AI and
-                    ML. As a leading innovator in the field, we specialise in
-                    crafting tailored solutions that enable businesses to
-                    transform data into strategic insights.
+                  <p>
+                    At -—name--, we are driven by the vision of revolutionising
+                    decision-making through the power of AI&ML. As a leading
+                    innovator in the field, we specialise in crafting solutions
+                    that enable businesses to transform data into strategic
+                    insights.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="row about-div2 abt gy-4" data-aos="slide-left">
+            <div className="row about-div2 abt gy-4" data-aos="fade-left">
               <div className="col-lg-6">
                 <div className="content ps-0 ps-lg-5">
-                  <p className="fst-italic">
+                  <p>
                     Our cutting-edge AI/ML solutions offer businesses a
                     competitive edge by transforming raw data into actionable
                     insights. Through advanced algorithms and predictive
