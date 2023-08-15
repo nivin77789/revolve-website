@@ -339,14 +339,29 @@ function App() {
             <div className="row about-div2 abt gy-4" data-aos="fade-left">
               <div className="col-lg-6">
                 <div className="content ps-0 ps-lg-5">
-                  <p>
-                    Our cutting-edge AI/ML solutions offer businesses a
-                    competitive edge by transforming raw data into actionable
-                    insights. Through advanced algorithms and predictive
-                    modelling, we enable companies to anticipate market trends,
-                    identify opportunities, and mitigate risks with
-                    unprecedented accuracy.
-                  </p>
+                  <div class="card">
+                    <div class="tools">
+                      <div class="circle">
+                        <span class="red box"></span>
+                      </div>
+                      <div class="circle">
+                        <span class="yellow box"></span>
+                      </div>
+                      <div class="circle">
+                        <span class="green box"></span>
+                      </div>
+                    </div>
+                    <div class="card__content">
+                      <p>
+                        Our cutting-edge AI/ML solutions offer businesses a
+                        competitive edge by transforming raw data into
+                        actionable insights. Through advanced algorithms and
+                        predictive modelling, we enable companies to anticipate
+                        market trends, identify opportunities, and mitigate
+                        risks with unprecedented accuracy.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="col-lg-6 abt-img ab-img2">
