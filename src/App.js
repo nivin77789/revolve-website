@@ -10,16 +10,6 @@ function App() {
   useEffect(() => {
     AOS.init();
   }, []);
-  //spotlight
-  // $("body").mousemove(function (e) {
-  //   let x = e.pageX;
-  //   let y = e.pageY;
-
-  //   $("body").css(
-  //     "background",
-  //     "radial-gradient(circle at " + x + "px " + y + "px, #151515, #000 2% )"
-  //   );
-  // });
 
   const arr = [1, 2, 3, 4, 5, 6, 7];
   return (
@@ -45,7 +35,7 @@ function App() {
         </nav>
       </div>
       <header id="header" className="header d-flex align-items-center">
-        <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <div className="container-fluid land-text container-xl d-flex align-items-center justify-content-between">
           <a href="index.html" className="logo d-flex align-items-center">
             <img src="assets/img/logo.png" alt="" />
             <h1>
