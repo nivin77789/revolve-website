@@ -11,6 +11,9 @@
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 /* Fonts */
+.land {
+  height: 700px;
+}
 .terminal_cursor {
   display: block;
   height: 14px;
@@ -504,9 +507,9 @@
 .abt p {
   line-height: 200%;
   text-align: justify;
-  font-size: 18px;
+  font-size: 15px;
   margin: 5px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 /* Smooth scroll behavior */
 :root {
@@ -2394,7 +2397,7 @@ section {
 
 .contact .php-email-form button[type="submit"] {
   background: rgb(33, 33, 33);
-  border: 2px solid grey;
+  border: 1px solid grey;
   padding: 14px 45px;
   color: #fff;
   transition: 0.4s;

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import TrackVisibility from "react-on-screen";
 import Marquee from "react-fast-marquee";
-// import $ from "jquery";
+import Spline from "@splinetool/react-spline";
 
 function App() {
   //data-aos
@@ -118,7 +118,7 @@ function App() {
           <a href="index.html" className="logo d-flex align-items-center">
             <img src="assets/img/logo.png" alt="" />
             <h1>
-              Revolve<span>.</span>
+              Arcane<span>.</span>
             </h1>
           </a>
           <nav id="navbar" className="navbar">
@@ -142,7 +142,7 @@ function App() {
       </header>{" "}
       <section id="hero" className="hero">
         <div className="container position-relative">
-          <div className="row gy-5" data-aos="fade-in">
+          <div className="row land gy-5" data-aos="fade-in">
             <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
               <TrackVisibility>
                 {({ isVisible }) => (
@@ -152,7 +152,7 @@ function App() {
                     }
                   >
                     <h2>
-                      Welcome to <span className="text-grad">Revolve</span>
+                      Welcome to <span className="text-grad">Arcane</span>
                     </h2>
                     <h1>
                       {/* <h3> */}
@@ -183,13 +183,14 @@ function App() {
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2 baner-im">
-              <img
+              <Spline scene="https://prod.spline.design/Sz-4YKaAah5g0YkT/scene.splinecode" />
+              {/* <img
                 src="assets/img/hero.png"
                 className="img-fluid hero-img moveArrow"
                 alt=""
                 data-aos="zoom-out"
                 data-aos-delay="100"
-              />
+              /> */}
             </div>
           </div>
           <div className="icon-boxes position-relative">
@@ -400,11 +401,11 @@ function App() {
                   <div className="icon">
                     <i className="bi bi-activity"></i>
                   </div>
-                  <h3>Nesciunt Mete</h3>
+                  <h3>PoC Development:</h3>
                   <p>
-                    Provident nihil minus qui consequatur non omnis maiores. Eos
-                    accusantium minus dolores iure perferendis tempore et
-                    consequatur.
+                    We develop working prototypes to showcase AI's potential
+                    impact, helping businesses evaluate feasibility & make
+                    informed decisions about scaling.
                   </p>
                 </div>
               </div>
@@ -414,10 +415,11 @@ function App() {
                   <div className="icon">
                     <i className="bi bi-broadcast"></i>
                   </div>
-                  <h3>Eosle Commodi</h3>
+                  <h3> AI Ethics and Bias Mitigation</h3>
                   <p>
-                    Ut autem aut autem non a. Sint sint sit facilis nam iusto
-                    sint. Libero corrupti neque eum hic non ut nesciunt dolorem.
+                    We ensure fair and responsible AI systems by identifying and
+                    rectifying biases, enhancing trust among users and
+                    stakeholders.
                   </p>
                 </div>
               </div>
@@ -427,11 +429,11 @@ function App() {
                   <div className="icon">
                     <i className="bi bi-easel"></i>
                   </div>
-                  <h3>Ledo Markt</h3>
+                  <h3> Supply Chain Optimisation</h3>
                   <p>
-                    Ut excepturi voluptatem nisi sed. Quidem fuga consequatur.
-                    Minus ea aut. Vel qui id voluptas adipisci eos earum
-                    corrupti.
+                    We streamline supply chain management using AI to forecast
+                    demand, optimise inventory, and improve logistics for cost
+                    reduction and efficiency.
                   </p>
                 </div>
               </div>
@@ -441,10 +443,11 @@ function App() {
                   <div className="icon">
                     <i className="bi bi-bounding-box-circles"></i>
                   </div>
-                  <h3>Asperiores Commodit</h3>
+                  <h3>AI-Driven Cybersecurity</h3>
                   <p>
-                    Non et temporibus minus omnis sed dolor esse consequatur.
-                    Cupiditate sed error ea fuga sit provident adipisci neque.
+                    We employ AI algorithms for real-time cyber threat detection
+                    and prevention, safeguarding digital assets and sensitive
+                    data from breaches.
                   </p>
                 </div>
               </div>
@@ -454,11 +457,11 @@ function App() {
                   <div className="icon">
                     <i className="bi bi-calendar4-week"></i>
                   </div>
-                  <h3>Velit Doloremque</h3>
+                  <h3>Predictive Maintenance</h3>
                   <p>
-                    Cumque et suscipit saepe. Est maiores autem enim facilis ut
-                    aut ipsam corporis aut. Sed animi at autem alias eius
-                    labore.
+                    We utilise AI to predict equipment failures, optimising
+                    maintenance schedules, minimising downtime, and reducing
+                    maintenance costs.
                   </p>
                 </div>
               </div>
@@ -468,10 +471,11 @@ function App() {
                   <div className="icon">
                     <i className="bi bi-chat-square-text"></i>
                   </div>
-                  <h3>Dolori Architecto</h3>
+                  <h3>Data Labelling and Annotation</h3>
                   <p>
-                    Hic molestias ea quibusdam eos. Fugiat enim doloremque aut
-                    neque non et debitis iure. Corrupti recusandae ducimus enim.
+                    We provide accurate data labelling for machine learning
+                    models, ensuring effective learning and decision-making
+                    across various AI applications.
                   </p>
                 </div>
               </div>
@@ -601,7 +605,9 @@ function App() {
                     </div>
                   </div>
                   <div className="text-center">
-                    <button type="submit">Send Message</button>
+                    <button type="submit" className="button">
+                      Send Message
+                    </button>
                   </div>
                 </form>
               </div>
