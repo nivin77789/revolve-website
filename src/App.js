@@ -531,7 +531,7 @@ function App() {
               <a href="index.html" className="logo d-flex align-items-center">
                 <span>Revolve</span>
               </a>
-              <p>Enhancing Business Decision-Making with AI/ML Solutions</p>
+              <p>We Speak Fluent Algorithm</p>
               <div className="social-links d-flex mt-4">
                 <a href="./" className="twitter">
                   <i className="bi bi-twitter"></i>
