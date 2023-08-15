@@ -97,7 +97,7 @@ function App() {
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2 baner-im">
-              <Spline scene="https://prod.spline.design/Sz-4YKaAah5g0YkT/scene.splinecode" />
+              <Spline scene="https://prod.spline.design/NzTYTHTNCAxSOB9w/scene.splinecode" />
               {/* <img
                 src="assets/img/hero.png"
                 className="img-fluid hero-img moveArrow"
@@ -287,11 +287,6 @@ function App() {
                   className="img-fluid ab-img rounded-4 mb-4 moveArrow"
                   alt=""
                 />
-                {/* <img
-                  className="img-fluid ab-img   rounded-4 mb-4 moveArrow"
-                  src="assets/img/about3.png"
-                  alt=""
-                /> */}
               </div>
             </div>
           </div>
