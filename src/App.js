@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import TrackVisibility from "react-on-screen";
 import Marquee from "react-fast-marquee";
@@ -21,75 +21,6 @@ function App() {
   //   );
   // });
 
-  //changing words
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
-  console.log(index);
-  const toRotate = [
-    "Customised Chatbots",
-    "Predictive Maintenance",
-    "Medical Imaging Analysis",
-    "Supply Chain Optimisation",
-    "Personalised Marketing",
-    "Natural Language Processing Services",
-    "Fraud Detection",
-    "Smart City Solutions",
-    "Automated Content Generation",
-    "Emotion Recognition",
-    "Financial Forecasting",
-    "Custom Voice Assistants",
-    "Visual Recognition Solutions",
-    "AI-Driven Cybersecurity",
-    "Recommender Systems",
-    "Healthcare Predictive Analytics",
-    "Automated Financial Advisors (NLG)",
-    "Smart Home Solutions",
-    "Digital Media Optimisation",
-    "Customer Behaviour Prediction",
-    "Retail AI Solutions",
-    "Automated Research Assistance",
-  ];
-  const period = 5000;
-
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => {
-      clearInterval(ticker);
-    };
-  });
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex((prevIndex) => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === "") {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(500);
-    } else {
-      setIndex((prevIndex) => prevIndex + 1);
-    }
-  };
   const arr = [1, 2, 3, 4, 5, 6, 7];
   return (
     <div className="App">
@@ -155,16 +86,9 @@ function App() {
                       Welcome to <span className="text-grad">Arcane</span>
                     </h2>
                     <h1>
-                      {/* <h3> */}
-                      {`Transforming Possibilities into Reality with `}{" "}
-                      <span
-                        className="txt-rotate"
-                        dataPeriod="1000"
-                        data-rotate='["AI/ML Solutions","Data Scientist", "Web Developer", "Web Designer", "UI/UX Designer"]'
-                      >
-                        <span className="wrap">{text}</span>
-                      </span>
-                      {/* </h3> */}
+                      <p>
+                        Revolutionizing <span className="spin"></span>
+                      </p>
                     </h1>
                   </div>
                 )}

@@ -11,6 +11,80 @@
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 /* Fonts */
+.spin {
+  color: rgb(198, 198, 198);
+  font-weight: 500;
+}
+.spin:after {
+  content: "";
+  animation: spins 25s linear infinite;
+}
+@keyframes spins {
+  0% {
+    content: "Customised Chatbots";
+  }
+  5% {
+    content: "Predictive Maintenance";
+  }
+  10% {
+    content: "Medical Imaging Analysis";
+  }
+  15% {
+    content: "Supply Chain Optimisation";
+  }
+  20% {
+    content: "Personalised Marketing";
+  }
+  25% {
+    content: "Natural Language Processing Services";
+  }
+  30% {
+    content: "Fraud Detection";
+  }
+  35% {
+    content: "Smart City Solutions";
+  }
+  40% {
+    content: "Automated Content Generation";
+  }
+  45% {
+    content: "Emotion Recognition";
+  }
+  50% {
+    content: "Financial Forecasting";
+  }
+  55% {
+    content: "Custom Voice Assistants";
+  }
+  60% {
+    content: "Visual Recognition Solutions";
+  }
+  65% {
+    content: "AI-Driven Cybersecurity";
+  }
+  70% {
+    content: "Recommender Systems";
+  }
+  75% {
+    content: "Healthcare Predictive Analytics";
+  }
+  80% {
+    content: "Automated Financial Advisors (NLG)";
+  }
+  85% {
+    content: "Smart Home Solutions";
+  }
+  90% {
+    content: "Digital Media Optimisation";
+  }
+  95% {
+    content: "Customer Behaviour Prediction";
+  }
+  100% {
+    content: "Retail AI Solutions";
+  }
+}
+
 .land {
   height: 700px;
 }
@@ -535,7 +609,8 @@ body {
     );
   background-size: 10% 5%;
   border: 0.25px solid #141414;
-  font-family: var(--font-default);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #cdcdcd;
   background-color: #000000;
 }
