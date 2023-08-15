@@ -323,12 +323,13 @@ function App() {
                       </div>
                     </div>
                     <div class="card__content">
-                      <p>
+                      <p className="blik">
                         At -—name--, we are driven by the vision of
                         revolutionising decision-making through the power of
                         AI&ML. As a leading innovator in the field, we
                         specialise in crafting solutions that enable businesses
-                        to transform data into strategic insights.
+                        to transform data into strategic insights
+                        <span class="terminal_cursor"></span>
                       </p>
                     </div>
                   </div>
@@ -358,7 +359,8 @@ function App() {
                         actionable insights. Through advanced algorithms and
                         predictive modelling, we enable companies to anticipate
                         market trends, identify opportunities, and mitigate
-                        risks with unprecedented accuracy.
+                        risks with unprecedented accuracy
+                        <span class="terminal_cursor"></span>
                       </p>
                     </div>
                   </div>
