@@ -39,7 +39,7 @@ function App() {
           <a href="index.html" className="logo d-flex align-items-center">
             <img src="assets/img/logo.png" alt="" />
             <h1>
-              Arcane<span>.</span>
+              StratusAi<span>.</span>
             </h1>
           </a>
           <nav id="navbar" className="navbar">
@@ -73,7 +73,7 @@ function App() {
                     }
                   >
                     <h2>
-                      Welcome to <span className="text-grad">Arcane</span>
+                      Welcome to <span className="text-grad">StratusAi</span>
                     </h2>
                     <h1>
                       <p>
@@ -529,7 +529,7 @@ function App() {
           <div className="row gy-4">
             <div className="col-lg-5 col-md-12 footer-info">
               <a href="index.html" className="logo d-flex align-items-center">
-                <span>Revolve</span>
+                <span>StratusAi</span>
               </a>
               <p>We Speak Fluent Algorithm</p>
               <div className="social-links d-flex mt-4">
@@ -605,7 +605,7 @@ function App() {
           <div className="copyright">
             &copy; Copyright{" "}
             <strong>
-              <span>Revolve</span>
+              <span>StratusAi</span>
             </strong>
             . All Rights Reserved
           </div>
