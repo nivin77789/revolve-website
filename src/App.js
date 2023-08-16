@@ -594,7 +594,7 @@ function App() {
                 </p>
                 <p>
                   {" "}
-                  <strong>Email:</strong> info@example.com
+                  <strong>Email:</strong> admin@stratusai.in
                 </p>
               </p>
             </div>
