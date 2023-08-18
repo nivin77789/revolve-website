@@ -77,7 +77,8 @@ function App() {
                     </h2>
                     <h1>
                       <p>
-                        Revolutionizing <span className="spin"></span>
+                        We Speak Fluent Algorithm
+                        {/* Revolutionizing <span className="spin"></span> */}
                       </p>
                     </h1>
                   </div>
