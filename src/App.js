@@ -77,7 +77,7 @@ function App() {
                     </h2>
                     <h1>
                       <p>
-                        We Speak Fluent Algorithm
+                        We Speak <span>Fluent</span> Algorithm
                         {/* Revolutionizing <span className="spin"></span> */}
                       </p>
                     </h1>
@@ -525,6 +525,11 @@ function App() {
           </div>
         </section>
       </main>
+      <div className="closeup">
+        <h2>
+          We Speak Fluent <span className="text-grad">Algorithm</span>
+        </h2>
+      </div>
       <footer id="footer" className="footer">
         <div className="container">
           <div className="row gy-4">

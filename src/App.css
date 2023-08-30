@@ -10,6 +10,32 @@
 # Set main reusable colors and fonts using CSS variables
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
+
+/* closeup */
+.closeup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  text-align: justify;
+  text-align-last: center;
+  text-align: center;
+  padding: 20px;
+  height: 600px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8954175420168067) 30%,
+    rgba(41, 21, 87, 0.727) 53%,
+    rgba(0, 0, 0, 0.9458377100840336) 72%
+  );
+}
+.closeup h2 {
+  font-size: 60px;
+  text-align: center;
+}
+
 /* Fonts */
 .spin {
   color: rgb(198, 198, 198);
