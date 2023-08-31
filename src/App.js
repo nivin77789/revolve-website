@@ -527,7 +527,7 @@ function App() {
       </main>
       <div className="closeup">
         <h2>
-          We Speak Fluent <span className="text-grad">Algorithm</span>
+          We Speak <span className="text-grad">Fluent Algorithm</span>
         </h2>
       </div>
       <footer id="footer" className="footer">
