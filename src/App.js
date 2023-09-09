@@ -4,6 +4,7 @@ import AOS from "aos";
 import TrackVisibility from "react-on-screen";
 import Marquee from "react-fast-marquee";
 import Spline from "@splinetool/react-spline";
+import { Contact } from "./components/contact";
 
 function App() {
   //data-aos
@@ -89,12 +90,18 @@ function App() {
                   Get Started
                 </a>
                 <a
+                  href="#contact"
+                  className="glightbox btn-watch-video d-flex align-items-center"
+                >
+                  <span>Let's Talk</span>
+                </a>
+                {/* <a
                   href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
                   className="glightbox btn-watch-video d-flex align-items-center"
                 >
                   <i className="bi bi-play-circle"></i>
                   <span>Watch Video</span>
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2 baner-im">
@@ -240,7 +247,7 @@ function App() {
                     </div>
                     <div class="card__content">
                       <p className="blik">
-                        At -—name--, we are driven by the vision of
+                        At StratusAi, we are driven by the vision of
                         revolutionising decision-making through the power of
                         AI&ML. As a leading innovator in the field, we
                         specialise in crafting solutions that enable businesses
@@ -298,10 +305,10 @@ function App() {
             <div className="section-header">
               <h2>Our Services</h2>
               <p>
-                At our companies name, we are committed to being your strategic
-                partner on the journey to data-driven success. We collaborate
-                closely with you to understand your needs and tailor solutions
-                that empower your business to make confident decisions.
+                At StratusAi, we are committed to being your strategic partner
+                on the journey to data-driven success. We collaborate closely
+                with you to understand your needs and tailor solutions that
+                empower your business to make confident decisions.
               </p>
             </div>
 
@@ -393,7 +400,12 @@ function App() {
           </div>
         </section>
 
-        <section id="call-to-action" className="call-to-action">
+        <div className="closeup">
+          <h2>
+            We Speak <span className="text-col">Fluent Algorithm</span>
+          </h2>
+        </div>
+        {/* <section id="call-to-action" className="call-to-action">
           <div className="container text-center" data-aos="zoom-out">
             <a
               href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
@@ -411,7 +423,7 @@ function App() {
               Call To Action
             </a>
           </div>
-        </section>
+        </section> */}
 
         <section id="contact" className="contact">
           <div className="container" data-aos="fade-up">
@@ -431,7 +443,11 @@ function App() {
                     <i className="bi bi-geo-alt flex-shrink-0"></i>
                     <div>
                       <h4>Location:</h4>
-                      <p> MVJ college of engingr5d ctgyuhnfvg</p>
+                      <p>
+                        {" "}
+                        Patros vinaygar north avenue, cbm compund,
+                        Visakhapatnam, Andhra Pradesh, 530003
+                      </p>
                     </div>
                   </div>
 
@@ -447,89 +463,26 @@ function App() {
                     <i className="bi bi-phone flex-shrink-0"></i>
                     <div>
                       <h4>Call:</h4>
-                      <p>+1 5589 55488 55</p>
+                      <p>+91-9014279195 </p>
                     </div>
                   </div>
                   <div className="info-item d-flex">
                     <i className="bi bi-clock flex-shrink-0"></i>
                     <div>
                       <h4>Open Hours:</h4>
-                      <p>Mon-Sat: 11AM - 23PM</p>
+                      <p>Mon-Sat: 8AM - 6PM</p>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="col-lg-8">
-                <form
-                  action="forms/contact.php"
-                  method="post"
-                  className="php-email-form"
-                >
-                  <div className="row">
-                    <div className="col-md-6 form-group">
-                      <input
-                        type="text"
-                        name="name"
-                        className="form-control"
-                        id="name"
-                        placeholder="Your Name"
-                        required
-                      />
-                    </div>
-                    <div className="col-md-6 form-group mt-3 mt-md-0">
-                      <input
-                        type="email"
-                        className="form-control"
-                        name="email"
-                        id="email"
-                        placeholder="Your Email"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div className="form-group mt-3">
-                    <input
-                      type="text"
-                      className="form-control"
-                      name="subject"
-                      id="subject"
-                      placeholder="Subject"
-                      required
-                    />
-                  </div>
-                  <div className="form-group mt-3">
-                    <textarea
-                      className="form-control"
-                      name="message"
-                      rows="7"
-                      placeholder="Message"
-                      required
-                    ></textarea>
-                  </div>
-                  <div className="my-3">
-                    <div className="loading">Loading</div>
-                    <div className="error-message"></div>
-                    <div className="sent-message">
-                      Your message has been sent. Thank you!
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <button type="submit" className="button">
-                      Send Message
-                    </button>
-                  </div>
-                </form>
+                <Contact />
               </div>
             </div>
           </div>
         </section>
       </main>
-      <div className="closeup">
-        <h2>
-          We Speak <span className="text-grad">Fluent Algorithm</span>
-        </h2>
-      </div>
       <footer id="footer" className="footer">
         <div className="container">
           <div className="row gy-4">
@@ -594,9 +547,11 @@ function App() {
             <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
               <h4>Contact Us</h4>
               <p>
-                MVJ college of engingr5d ctgyuhnfr5dert e5trcvgyb ctfvg
+                {" "}
+                patros vinaygar north avenue, cbm compund, Visakhapatnam, Andhra
+                Pradesh, 530003
                 <p>
-                  <strong>Phone:</strong> +91 9876543210
+                  <strong>Phone:</strong> +91 9014279195
                 </p>
                 <p>
                   {" "}
