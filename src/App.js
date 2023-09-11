@@ -78,7 +78,8 @@ function App() {
                     </h2>
                     <h1>
                       <p>
-                        We Speak <span>Fluent</span> Algorithm
+                        We Speak{" "}
+                        <span className="tagline">Fluent Algorithm </span>
                         {/* Revolutionizing <span className="spin"></span> */}
                       </p>
                     </h1>
@@ -290,11 +291,14 @@ function App() {
                 </div>
               </div>
               <div className="col-lg-6 abt-img ab-img2">
-                <img
-                  src="assets/img/about.png"
-                  className="img-fluid ab-img rounded-4 mb-4 moveArrow"
-                  alt=""
-                />
+                <div class="cube-loader">
+                  <div class="cube-wrapper">
+                    <span class="cube-span"></span>
+                    <span class="cube-span"></span>
+                    <span class="cube-span"></span>
+                    <span class="cube-span"></span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
