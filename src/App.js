@@ -106,7 +106,12 @@ function App() {
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2 baner-im">
-              <Spline scene="https://prod.spline.design/NzTYTHTNCAxSOB9w/scene.splinecode" />
+              {/* <Spline scene="https://prod.spline.design/NzTYTHTNCAxSOB9w/scene.splinecode" /> */}
+              <div class="loader">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
               {/* <img
                 src="assets/img/hero.png"
                 className="img-fluid hero-img moveArrow"
@@ -292,11 +297,17 @@ function App() {
               </div>
               <div className="col-lg-6 abt-img ab-img2">
                 <div class="cube-loader">
+                  <div class="cube-top"></div>
                   <div class="cube-wrapper">
-                    <span class="cube-span"></span>
-                    <span class="cube-span"></span>
-                    <span class="cube-span"></span>
-                    <span class="cube-span"></span>
+                    <span style={{ "--i": 0 }} class="cube-span"></span>
+                    <span style={{ "--i": 1 }} class="cube-span"></span>
+                    <span style={{ "--i": 2 }} class="cube-span"></span>
+                    <span style={{ "--i": 3 }} class="cube-span"></span>
+                    <img
+                      src="assets/img/ai.png"
+                      className="img-fluid ab-img rounded-4 mb-4 moveArrow"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
