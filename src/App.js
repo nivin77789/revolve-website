@@ -3,8 +3,8 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import TrackVisibility from "react-on-screen";
 import Marquee from "react-fast-marquee";
-import Spline from "@splinetool/react-spline";
-import { Contact } from "./components/contact";
+// import Spline from "@splinetool/react-spline";
+import { Contact } from "./Contact";
 
 function App() {
   //data-aos
