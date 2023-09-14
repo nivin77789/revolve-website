@@ -35,7 +35,7 @@
   margin-top: -70px;
   margin-left: -70px;
   border-width: 30px;
-  border-color: #447891;
+  border-color: #64b4ec;
   animation-name: dot2;
   animation-delay: 75ms;
   box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);
@@ -48,7 +48,7 @@
   margin-top: -80px;
   margin-left: -80px;
   border-width: 20px;
-  border-color: #6bb2cd;
+  border-color: #6bbdcd;
   animation-name: dot3;
   animation-delay: 150ms;
   box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.1);
@@ -154,8 +154,8 @@
   transform: rotateY(calc(90deg * var(--i))) translateZ(120px);
   background: linear-gradient(
     to bottom,
-    hsl(287, 99%, 58%) 10%,
-    hsl(196, 99%, 58%) 100%
+    hsla(287, 99%, 58%, 0.538) 10%,
+    hsla(196, 99%, 58%, 0.521) 100%
   );
 }
 

@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import TrackVisibility from "react-on-screen";
 import Marquee from "react-fast-marquee";
-// import Spline from "@splinetool/react-spline";
+import Spline from "@splinetool/react-spline";
 import { Contact } from "./Contact";
 
 function App() {
@@ -106,12 +106,12 @@ function App() {
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2 baner-im">
-              {/* <Spline scene="https://prod.spline.design/NzTYTHTNCAxSOB9w/scene.splinecode" /> */}
-              <div class="loader">
+              <Spline scene="https://prod.spline.design/NzTYTHTNCAxSOB9w/scene.splinecode" />
+              {/* <div class="loader">
                 <div class="dot"></div>
                 <div class="dot"></div>
                 <div class="dot"></div>
-              </div>
+              </div> */}
               {/* <img
                 src="assets/img/hero.png"
                 className="img-fluid hero-img moveArrow"
