@@ -1,9 +1,19 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./App.css";
 import "./contact.css";
 
 export const Contact = () => {
+  const [showAlert, setShowAlert] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowAlert(true);
+
+    setTimeout(() => {
+      setShowAlert(false);
+    }, 1200);
+  };
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -28,6 +38,7 @@ export const Contact = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail}>
+      {showAlert && <div className="alert-div">Message sent successfully</div>}
       <input
         type="text"
         name="from_name"
@@ -36,11 +47,10 @@ export const Contact = () => {
       />
       <input type="email" name="from_email" placeholder="Your Email" required />
       <textarea name="message" rows="7" placeholder="Your Message" required />
+
       <center>
         <button
-          onClick={function () {
-            console.log("Done!");
-          }}
+          onClick={handleButtonClick}
           type="submit"
           className="btn butn btn-primary"
         >

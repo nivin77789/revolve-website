@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import TrackVisibility from "react-on-screen";
 import Marquee from "react-fast-marquee";
-// import Spline from "@splinetool/react-spline";
+import Spline from "@splinetool/react-spline";
 import { Contact } from "./Contact";
 
 function App() {
@@ -106,12 +106,22 @@ function App() {
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2 baner-im">
-              {/* <Spline scene="https://prod.spline.design/NzTYTHTNCAxSOB9w/scene.splinecode" /> */}
-              <div class="loader">
+              <Spline
+                className="drm"
+                scene="https://prod.spline.design/NzTYTHTNCAxSOB9w/scene.splinecode"
+              />
+              <img
+                src="assets/img/hero.png"
+                className="img-fluid hero-img moveArrow"
+                alt=""
+                data-aos="zoom-out"
+              />
+
+              {/* <div class="loader">
                 <div class="dot"></div>
                 <div class="dot"></div>
                 <div class="dot"></div>
-              </div>
+              </div> */}
               {/* <img
                 src="assets/img/hero.png"
                 className="img-fluid hero-img moveArrow"
@@ -303,11 +313,11 @@ function App() {
                     <span style={{ "--i": 1 }} class="cube-span"></span>
                     <span style={{ "--i": 2 }} class="cube-span"></span>
                     <span style={{ "--i": 3 }} class="cube-span"></span>
-                    <img
+                    {/* <img
                       src="assets/img/ai.png"
                       className="img-fluid ab-img rounded-4 mb-4 moveArrow"
                       alt=""
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
