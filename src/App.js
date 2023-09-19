@@ -468,11 +468,7 @@ function App() {
                     <i className="bi bi-geo-alt flex-shrink-0"></i>
                     <div>
                       <h4>Location:</h4>
-                      <p>
-                        {" "}
-                        Patros vinaygar north avenue, cbm compund,
-                        Visakhapatnam, Andhra Pradesh, 530003
-                      </p>
+                      <p>Bengaluru</p>
                     </div>
                   </div>
 
@@ -572,9 +568,7 @@ function App() {
             <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
               <h4>Contact Us</h4>
               <p>
-                {" "}
-                patros vinaygar north avenue, cbm compund, Visakhapatnam, Andhra
-                Pradesh, 530003
+                <strong>Location:</strong> Bengaluru
                 <p>
                   <strong>Phone:</strong> +91 9014279195
                 </p>
