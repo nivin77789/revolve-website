@@ -313,11 +313,6 @@ function App() {
                     <span style={{ "--i": 1 }} class="cube-span"></span>
                     <span style={{ "--i": 2 }} class="cube-span"></span>
                     <span style={{ "--i": 3 }} class="cube-span"></span>
-                    {/* <img
-                      src="assets/img/ai.png"
-                      className="img-fluid ab-img rounded-4 mb-4 moveArrow"
-                      alt=""
-                    /> */}
                   </div>
                 </div>
               </div>
@@ -569,13 +564,12 @@ function App() {
               <h4>Contact Us</h4>
               <p>
                 <strong>Location:</strong> Bengaluru
-                <p>
-                  <strong>Phone:</strong> +91 9014279195
-                </p>
-                <p>
-                  {" "}
-                  <strong>Email:</strong> contact@stratusai.in
-                </p>
+              </p>
+              <p>
+                <strong>Phone:</strong> +91 9014279195
+              </p>
+              <p>
+                <strong>Email:</strong> contact@stratusai.in
               </p>
             </div>
           </div>
