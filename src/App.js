@@ -480,7 +480,7 @@ function App() {
                     <i className="bi bi-envelope flex-shrink-0"></i>
                     <div>
                       <h4>Email:</h4>
-                      <p>info@example.com</p>
+                      <p>contact@stratusai.in</p>
                     </div>
                   </div>
 
@@ -555,16 +555,16 @@ function App() {
               <h4>Our Services</h4>
               <ul>
                 <li>
-                  <a href="./">Web Design</a>
+                  <a href="./">AI Ethics and Bias Mitigation</a>
                 </li>
                 <li>
-                  <a href="./">Web Development</a>
+                  <a href="./">Supply Chain Optimisation:</a>
                 </li>
                 <li>
-                  <a href="./">Video Editing</a>
+                  <a href="./">AI-Driven Cybersecurity</a>
                 </li>
                 <li>
-                  <a href="./">ML Solution</a>
+                  <a href="./">Predictive Maintenance</a>
                 </li>
               </ul>
             </div>
@@ -580,7 +580,7 @@ function App() {
                 </p>
                 <p>
                   {" "}
-                  <strong>Email:</strong> admin@stratusai.in
+                  <strong>Email:</strong> contact@stratusai.in
                 </p>
               </p>
             </div>
