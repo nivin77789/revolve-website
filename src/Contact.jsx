@@ -52,9 +52,9 @@ export const Contact = () => {
         <button
           onClick={handleButtonClick}
           type="submit"
-          className="btn butn btn-primary"
+          className="btn butn btn-55"
         >
-          Send
+          <span>Send</span>
         </button>
       </center>
     </form>
