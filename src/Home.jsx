@@ -1,7 +1,6 @@
 import "./App.css";
 import React, { useEffect } from "react";
 import AOS from "aos";
-import Service from "./Service";
 import Landing from "./Landing";
 import About from "./About";
 import Marq from "./Marq";
@@ -19,7 +18,6 @@ function Home() {
       <main id="main">
         <Marq />
         <About />
-        <Service />
         <Action />
         <Cont />
       </main>
