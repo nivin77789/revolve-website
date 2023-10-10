@@ -50,12 +50,16 @@ function App() {
         </div>
         <header id="header" className="header d-flex align-items-center">
           <div className="container-fluid land-text container-xl d-flex align-items-center justify-content-between">
-            <a href="index.html" className="logo d-flex align-items-center">
-              <img src="assets/img/logo.png" alt="" />
-              <h1>
-                Stratus<span>.</span>
-              </h1>
+            <a href="/" className="logo d-flex align-items-center">
+              <Link to="/">
+                {" "}
+                <img src="assets/img/logo.png" alt="" />
+                <h1>
+                  Stratus<span>.</span>
+                </h1>
+              </Link>
             </a>
+
             <nav id="navbar" className="navbar">
               <ul className="App-header">
                 <li>
