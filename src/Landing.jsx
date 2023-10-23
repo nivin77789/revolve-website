@@ -36,6 +36,7 @@ function Landing() {
                   </div>
                 )}
               </TrackVisibility>
+
               <div className="d-flex home-btn justify-content-center justify-content-lg-start">
                 <a href="#about" className="btn-get-started">
                   Get Started
@@ -56,10 +57,7 @@ function Landing() {
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2 baner-im">
-              <Spline
-                className="drm"
-                scene="https://prod.spline.design/NzTYTHTNCAxSOB9w/scene.splinecode"
-              />
+              <Spline scene="https://prod.spline.design/3ZcBSvEWQoelPJMu/scene.splinecode" />
               <img
                 src="assets/img/hero.png"
                 className="img-fluid hero-img moveArrow"

@@ -2,6 +2,8 @@ import "./App.css";
 import React, { useEffect } from "react";
 import AOS from "aos";
 
+import Spline from "@splinetool/react-spline";
+
 function About() {
   //data-aos
   useEffect(() => {
@@ -99,13 +101,14 @@ function About() {
               </div>
             </div>
             <div className="col-lg-6 abt-img ab-img2">
-              <div class="cube-loader">
-                <div class="cube-top"></div>
-                <div class="cube-wrapper">
-                  <span style={{ "--i": 0 }} class="cube-span"></span>
-                  <span style={{ "--i": 1 }} class="cube-span"></span>
-                  <span style={{ "--i": 2 }} class="cube-span"></span>
-                  <span style={{ "--i": 3 }} class="cube-span"></span>
+              <div class="cube-container">
+                <div class="cube">
+                  <div class="face front">PoC Development</div>
+                  <div class="face back">Bias Mitigation</div>
+                  <div class="face right">Optimisation</div>
+                  <div class="face left">AI-Driven</div>
+                  <div class="face top">Maintenance</div>
+                  <div class="face bottom">Data Labelling </div>
                 </div>
               </div>
             </div>

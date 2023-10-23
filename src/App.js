@@ -22,27 +22,27 @@ function App() {
             <a href="#hero" className="menu-item">
               <Link to="/">
                 {" "}
-                <i class="uil uil-estate"></i>
+                <i class="uil as uil-estate"></i>
               </Link>
               {/* <span className="menu-item-label">Home</span> */}
             </a>
             <a href="#about" className="menu-item">
               <Link to="/about">
-                <i class="uil uil-users-alt"></i>
+                <i class="uil as uil-users-alt"></i>
               </Link>
               {/* <span className="menu-item-label">About</span> */}
             </a>
             <a href="#services" className="menu-item">
               <Link to="/service">
                 {" "}
-                <i class="uil uil-servers"></i>
+                <i class="uil as uil-servers"></i>
               </Link>
               {/* <span className="menu-item-label">Services</span> */}
             </a>
             <a href="#contact" className="menu-item">
               <Link to="/contact">
                 {" "}
-                <i class="uil uil-chat"></i>{" "}
+                <i class="uil as uil-chat"></i>{" "}
               </Link>
               {/* <span className="menu-item-label">Contact us</span> */}
             </a>
