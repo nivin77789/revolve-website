@@ -2,7 +2,7 @@ import "./App.css";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import TrackVisibility from "react-on-screen";
-import Spline from "@splinetool/react-spline";
+// import Spline from "@splinetool/react-spline";
 
 function Landing() {
   //data-aos
