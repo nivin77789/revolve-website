@@ -5,13 +5,19 @@ import "./contact.css";
 
 export const Contact = () => {
   const [showAlert, setShowAlert] = useState(false);
+  const [inputValue, setInputValue] = useState("");
+
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
 
   const handleButtonClick = () => {
-    setShowAlert(true);
-
-    setTimeout(() => {
-      setShowAlert(false);
-    }, 1200);
+    if (inputValue !== "") {
+      setShowAlert(true);
+      setTimeout(() => {
+        setShowAlert(false);
+      }, 1200);
+    }
   };
 
   const form = useRef();
@@ -45,7 +51,14 @@ export const Contact = () => {
         placeholder="Your Full Name"
         required
       />
-      <input type="email" name="from_email" placeholder="Your Email" required />
+      <input
+        type="email"
+        name="from_email"
+        value={inputValue}
+        onChange={handleInputChange}
+        placeholder="Your Email"
+        required
+      />
       <textarea name="message" rows="7" placeholder="Your Message" required />
 
       <center>
