@@ -29,43 +29,7 @@ function Landing() {
                     <h1>
                       <p>
                         We Speak{" "}
-                        <span className="tagline">Fluent Algorithm </span>
-                        {/* Revolutionizing <span className="spin"></span> */}
-                      </p>
-                    </h1>
-                  </div>
-                )}
-              </TrackVisibility>
-              <div className="d-flex home-btn justify-content-center justify-content-lg-start">
-                <a href="#about" className="btn-get-started">
-                  Get Started
-                </a>
-                <a
-                  href="#contact"
-                  className="glightbox btn-watch-video d-flex align-items-center"
-                >
-                  <span>Let's Talk</span>
-                </a>
-                {/* <a
-                  href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-                  className="glightbox btn-watch-video d-flex align-items-center"
-                >
-                  <i className="bi bi-play-circle"></i>
-                  <span>Watch Video</span>
-                </a> */}
-              </div>
-            </div>
-            <div className="col-lg-6 order-1 order-lg-2 baner-im">
-              {/* <Spline
-                className="drm"
-                scene="https://prod.spline.design/6UzixtiOjUNL79eq/scene.splinecode"
-              /> */}
-              <img
-                src="assets/img/hero.png"
-                className="img-fluid hero-img moveArrow"
-                alt=""
-                data-aos="zoom-out"
-              />
+
             </div>
           </div>
           <div className="icon-boxes position-relative">
